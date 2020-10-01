@@ -7,6 +7,15 @@ Original file is located at
     https://colab.research.google.com/drive/1gBrLhC0gGJeXj8JHnjbrUjSTXb-N3HnQ
 """
 
+#Autor: Andrea Plata Github: andre4-99
+#Asignatura: Programación(0790) Sección:03
+#Universidad Central de Venezuela.
+#Asignación 1: Comente cada línea del código explicando que hace.
+#Asignación 2: Empaquete las funciones de este archivo en un módulo independiente.
+#Asignación 3: Hacer que los identificadores id se reacomoden cuando se elimine un contacto.
+#Asignación 4: Agregar una función para editar un contacto.
+#Asignación 5: Agregar una opción para mostrar un resumen del calendario en la consola, este resumen debe estar formateado para facilitar su lectura.
+
 agenda.py
 
 def crear_contacto(agenda_path):
