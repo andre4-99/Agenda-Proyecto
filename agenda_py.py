@@ -41,6 +41,19 @@ def crear_contacto(agenda_path):
     agenda.update( {id_contact:contacto} )
     cargar_agenda(agenda_path,agenda) #se cierra con la función cargar_agenda para que se actualice el contenido
 
+"""def ordenar_contacto(agenda_path):        #Esta es la Asignación 3: no está terminada. Ni me corrió. me daba error de sintaxis en descargar_agenda(agenda_path)
+  i = 0                                      #Asumo que ese error de sintaxis es porque algo estaba haciendo mal en esta función ordenar_contacto. Solo que no supe qué.
+  agenda = descargar_agenda(agenda_path)     #Esta función sería llamda dentro de la función eliminar_contacto(agenda_path) después de eliminar el contacto con la función .pop()
+  for id in agenda:
+    copia_contacto = agenda[id]
+    agenda.pop(id)
+    i += 1
+    id_contact = (4-len(str(i))*'0'+str(i))
+    id_contact = '0-{}'.format(id_contact)
+    agenda.update({id_contact:copia_contacto})
+    
+  cargar_agenda(agenda_path,agenda)"""    
+    
 def eliminar_contacto(agenda_path):
     """Esta función elimina un contacto de una agenda"""
     # Asinación : Hacer que los identificadores id se reacomoden cuando se elimine un contacto.
@@ -233,7 +246,16 @@ def main():
             raise ValueError("Error, opción no válida. Las opciones válidas son crear, editar, eliminar o salir.")
 
     print("Fin del programa. Gracias por utilizar la agenda")
+"""
+import json
+datos_json = json.dumps(agenda_path)       #Esto sería una parte de lo que usted pidió en el proyecto. No lo pude probar porque no tengo python, sin embargo lo mandé a compilar y no hacía nada.
+with open('datos.json', 'w') as file:      #Cosa que me parece rara porquem me guié de lo que usted envió
+    json.dump(agenda_path, file)
 
+def json():
+  datos_json = json.dumps(agenda_path)
+  with open('datos.json', 'w') as file:
+    son.dump(agenda_path, file)"""
 
 archivo = open('agenda.txt','at')
 archivo.write(main())
